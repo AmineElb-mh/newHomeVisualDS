@@ -28,11 +28,17 @@ const pages = [
 // Swipe tuning: high enough that scrolling/jitter never accidentally
 // triggers a page change, low enough that a normal flick registers.
 const WHEEL_SWIPE_THRESHOLD = 75;
-const WHEEL_COOLDOWN_MS = 350;
 const DRAG_SWIPE_THRESHOLD = 50;
 
-const TRANSITION_DURATION = 0.32;
-const TRANSITION_EASE = [0.4, 0, 0.2, 1] as const;
+// A trackpad flick keeps sending decaying "momentum" wheel events long
+// after the fingers lift. Rather than a fixed cooldown (which either
+// blocks a fast next swipe or, if too short, lets that momentum tail
+// cross the threshold again and skip an extra page), we stay locked
+// until the wheel goes fully idle for this long.
+const WHEEL_IDLE_RESET_MS = 120;
+
+const TRANSITION_DURATION = 0.22;
+const TRANSITION_EASE = [0.22, 1, 0.36, 1] as const;
 
 type Transition = {
   from: number;
@@ -60,15 +66,24 @@ export default function App() {
   const rowRef = useRef<HTMLDivElement>(null);
   const currentIndexRef = useRef(0);
   const isAnimatingRef = useRef(false);
+  const pendingTargetRef = useRef<number | null>(null);
 
   useEffect(() => {
     currentIndexRef.current = currentIndex;
   }, [currentIndex]);
 
   const goTo = useCallback((targetIndex: number) => {
-    if (isAnimatingRef.current) return;
-    const from = currentIndexRef.current;
     const to = Math.max(0, Math.min(pages.length - 1, targetIndex));
+
+    // A swipe landed while the previous transition is still animating —
+    // don't drop it, just remember where it wants to go and apply it the
+    // moment the current one settles.
+    if (isAnimatingRef.current) {
+      pendingTargetRef.current = to;
+      return;
+    }
+
+    const from = currentIndexRef.current;
     if (to === from) return;
     const width = containerRef.current?.getBoundingClientRect().width ?? 0;
     if (!width) return;
@@ -95,14 +110,21 @@ export default function App() {
         ease: TRANSITION_EASE,
         onComplete: () => {
           setCurrentIndex(to);
+          currentIndexRef.current = to;
           setTransition(null);
           isAnimatingRef.current = false;
+
+          const pending = pendingTargetRef.current;
+          pendingTargetRef.current = null;
+          if (pending !== null && pending !== to) {
+            goTo(pending);
+          }
         },
       },
     );
 
     return () => controls.stop();
-  }, [transition]);
+  }, [transition, goTo]);
 
   // Trackpad/mousepad horizontal swipe, native listener so we can
   // preventDefault (React's onWheel is passive and can't block the
@@ -112,27 +134,36 @@ export default function App() {
     if (!container) return;
 
     let accumulatedDeltaX = 0;
-    let cooldown = false;
+    let locked = false;
+    let idleTimer: number | undefined;
 
     const onWheel = (e: WheelEvent) => {
       if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
       e.preventDefault();
-      if (cooldown) return;
+
+      // Any wheel event (including a momentum tail) pushes the "gesture
+      // has ended" idle timer back, so we only unlock once it's truly over.
+      window.clearTimeout(idleTimer);
+      idleTimer = window.setTimeout(() => {
+        locked = false;
+        accumulatedDeltaX = 0;
+      }, WHEEL_IDLE_RESET_MS);
+
+      if (locked) return;
 
       accumulatedDeltaX += e.deltaX;
       if (Math.abs(accumulatedDeltaX) > WHEEL_SWIPE_THRESHOLD) {
         const direction = accumulatedDeltaX > 0 ? 1 : -1;
         goTo(currentIndexRef.current + direction);
-        accumulatedDeltaX = 0;
-        cooldown = true;
-        window.setTimeout(() => {
-          cooldown = false;
-        }, WHEEL_COOLDOWN_MS);
+        locked = true;
       }
     };
 
     container.addEventListener("wheel", onWheel, { passive: false });
-    return () => container.removeEventListener("wheel", onWheel);
+    return () => {
+      container.removeEventListener("wheel", onWheel);
+      window.clearTimeout(idleTimer);
+    };
   }, [goTo]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
