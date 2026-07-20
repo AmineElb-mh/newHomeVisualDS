@@ -13,7 +13,7 @@ function Frame1() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">MIDDEN-OOSTEN</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">MIDDEN-OOSTEN</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -33,7 +33,7 @@ function Frame15() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame1 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Trump dreigt opnieuw met aanvallen op Iraanse energiecentrales en bruggen</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Trump dreigt opnieuw met aanvallen op Iraanse energiecentrales en bruggen</p>
       </div>
     </div>
   );
@@ -53,7 +53,7 @@ function Frame() {
       <Frame9 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">09:36</p>
           </div>
         </div>
@@ -66,7 +66,7 @@ function Frame3() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">ECONOMIE</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">ECONOMIE</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -86,7 +86,7 @@ function Frame16() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame3 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Groei Chinese economie valt terug tot laagste niveau in drie jaar</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Groei Chinese economie valt terug tot laagste niveau in drie jaar</p>
       </div>
     </div>
   );
@@ -106,7 +106,7 @@ function Frame2() {
       <Frame10 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">08:36</p>
           </div>
         </div>
@@ -119,7 +119,7 @@ function Frame5() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">OEKRAÏNE</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">OEKRAÏNE</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -139,7 +139,7 @@ function Frame17() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame5 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Oekraïense drones treffen “20 Russische schepen” in Zwarte Zee</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Oekraïense drones treffen “20 Russische schepen” in Zwarte Zee</p>
       </div>
     </div>
   );
@@ -159,7 +159,7 @@ function Frame4() {
       <Frame11 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">08:31</p>
           </div>
         </div>
@@ -172,7 +172,7 @@ function Frame7() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">BINNENLAND</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">BINNENLAND</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -192,7 +192,7 @@ function Frame18() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame7 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Lek in container op schip in Waaslandhaven: 150 mensen uit voorzorg naar ziekenhuis</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Lek in container op schip in Waaslandhaven: 150 mensen uit voorzorg naar ziekenhuis</p>
       </div>
     </div>
   );
@@ -212,7 +212,7 @@ function Frame6() {
       <Frame12 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">07:55</p>
           </div>
         </div>
@@ -225,7 +225,7 @@ function Frame14() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">CARTOON</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">CARTOON</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -245,7 +245,7 @@ function Frame19() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame14 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Lectrr, cartoon van de dag</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Lectrr, cartoon van de dag</p>
       </div>
     </div>
   );
@@ -265,7 +265,7 @@ function Frame8() {
       <Frame13 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">07:53</p>
           </div>
         </div>
@@ -278,7 +278,7 @@ function Frame23() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">WK VOETBAL</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">WK VOETBAL</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -298,7 +298,7 @@ function Frame22() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame23 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Deschamps noemt nederlaag tegen Spanje “eigen schuld”, maar haalt uit naar scheidsrechter</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Deschamps noemt nederlaag tegen Spanje “eigen schuld”, maar haalt uit naar scheidsrechter</p>
       </div>
     </div>
   );
@@ -318,7 +318,7 @@ function Frame20() {
       <Frame21 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">07:45</p>
           </div>
         </div>
@@ -331,7 +331,7 @@ function Frame27() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -351,7 +351,7 @@ function Frame26() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame27 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">N-VA-vicepremier Jambon gooit debat over flexi-jobs open</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">N-VA-vicepremier Jambon gooit debat over flexi-jobs open</p>
       </div>
     </div>
   );
@@ -371,7 +371,7 @@ function Frame24() {
       <Frame25 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">06:53</p>
           </div>
         </div>
@@ -384,7 +384,7 @@ function Frame31() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">GETEST</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">GETEST</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -404,7 +404,7 @@ function Frame30() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame31 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Wat zijn de beste chips met barbecuesmaak?</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Wat zijn de beste chips met barbecuesmaak?</p>
       </div>
     </div>
   );
@@ -424,7 +424,7 @@ function Frame28() {
       <Frame29 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">02:00</p>
           </div>
         </div>
@@ -437,7 +437,7 @@ function Frame35() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">DE OMWEG</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">DE OMWEG</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -457,7 +457,7 @@ function Frame34() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame35 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Naar deze koepel zou je blijven kijken tot je er een stijve nek van krijgt</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Naar deze koepel zou je blijven kijken tot je er een stijve nek van krijgt</p>
       </div>
     </div>
   );
@@ -477,7 +477,7 @@ function Frame32() {
       <Frame33 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">02:00</p>
           </div>
         </div>
@@ -490,7 +490,7 @@ function Frame39() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">MIDDEN-OOSTEN</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">MIDDEN-OOSTEN</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -510,7 +510,7 @@ function Frame38() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame39 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Trump dreigt opnieuw met aanvallen op Iraanse energiecentrales en bruggen</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Trump dreigt opnieuw met aanvallen op Iraanse energiecentrales en bruggen</p>
       </div>
     </div>
   );
@@ -530,7 +530,7 @@ function Frame36() {
       <Frame37 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">09:36</p>
           </div>
         </div>
@@ -543,7 +543,7 @@ function Frame43() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">ECONOMIE</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">ECONOMIE</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -563,7 +563,7 @@ function Frame42() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame43 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Groei Chinese economie valt terug tot laagste niveau in drie jaar</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Groei Chinese economie valt terug tot laagste niveau in drie jaar</p>
       </div>
     </div>
   );
@@ -583,7 +583,7 @@ function Frame40() {
       <Frame41 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">08:36</p>
           </div>
         </div>
@@ -596,7 +596,7 @@ function Frame47() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">OEKRAÏNE</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">OEKRAÏNE</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -616,7 +616,7 @@ function Frame46() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame47 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Oekraïense drones treffen “20 Russische schepen” in Zwarte Zee</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Oekraïense drones treffen “20 Russische schepen” in Zwarte Zee</p>
       </div>
     </div>
   );
@@ -636,7 +636,7 @@ function Frame44() {
       <Frame45 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">08:31</p>
           </div>
         </div>
@@ -649,7 +649,7 @@ function Frame51() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">BINNENLAND</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">BINNENLAND</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -669,7 +669,7 @@ function Frame50() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame51 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Lek in container op schip in Waaslandhaven: 150 mensen uit voorzorg naar ziekenhuis</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Lek in container op schip in Waaslandhaven: 150 mensen uit voorzorg naar ziekenhuis</p>
       </div>
     </div>
   );
@@ -689,7 +689,7 @@ function Frame48() {
       <Frame49 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">07:55</p>
           </div>
         </div>
@@ -702,7 +702,7 @@ function Frame55() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">CARTOON</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">CARTOON</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -722,7 +722,7 @@ function Frame54() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame55 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Lectrr, cartoon van de dag</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Lectrr, cartoon van de dag</p>
       </div>
     </div>
   );
@@ -742,7 +742,7 @@ function Frame52() {
       <Frame53 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">07:53</p>
           </div>
         </div>
@@ -755,7 +755,7 @@ function Frame59() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">WK VOETBAL</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">WK VOETBAL</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -775,7 +775,7 @@ function Frame58() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame59 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Deschamps noemt nederlaag tegen Spanje “eigen schuld”, maar haalt uit naar scheidsrechter</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Deschamps noemt nederlaag tegen Spanje “eigen schuld”, maar haalt uit naar scheidsrechter</p>
       </div>
     </div>
   );
@@ -795,7 +795,7 @@ function Frame56() {
       <Frame57 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">07:45</p>
           </div>
         </div>
@@ -808,7 +808,7 @@ function Frame63() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -828,7 +828,7 @@ function Frame62() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame63 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">N-VA-vicepremier Jambon gooit debat over flexi-jobs open</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">N-VA-vicepremier Jambon gooit debat over flexi-jobs open</p>
       </div>
     </div>
   );
@@ -848,7 +848,7 @@ function Frame60() {
       <Frame61 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">06:53</p>
           </div>
         </div>
@@ -861,7 +861,7 @@ function Frame67() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">GETEST</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">GETEST</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -881,7 +881,7 @@ function Frame66() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame67 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Wat zijn de beste chips met barbecuesmaak?</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Wat zijn de beste chips met barbecuesmaak?</p>
       </div>
     </div>
   );
@@ -901,7 +901,7 @@ function Frame64() {
       <Frame65 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">02:00</p>
           </div>
         </div>
@@ -914,7 +914,7 @@ function Frame71() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">DE OMWEG</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">DE OMWEG</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -934,7 +934,7 @@ function Frame70() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame71 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Naar deze koepel zou je blijven kijken tot je er een stijve nek van krijgt</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Naar deze koepel zou je blijven kijken tot je er een stijve nek van krijgt</p>
       </div>
     </div>
   );
@@ -954,7 +954,7 @@ function Frame68() {
       <Frame69 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">02:00</p>
           </div>
         </div>

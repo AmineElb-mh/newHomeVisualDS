@@ -72,8 +72,8 @@ export default function TabRow({ activeIndex }: { activeIndex: number }) {
                 />
               )}
               <div
-                className={`[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--font-size-sm)] text-center whitespace-nowrap ${
-                  isActive ? "text-black" : "text-[var(--color-neutral-70)]"
+                className={`[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[length:var(--font-size-sm)] text-center whitespace-nowrap ${
+                  isActive ? "text-black" : "text-[color:var(--color-neutral-70)]"
                 }`}
               >
                 <p className="leading-[1.1]">{label}</p>

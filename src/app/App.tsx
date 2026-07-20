@@ -206,7 +206,7 @@ export default function App() {
       <TabRow activeIndex={transition ? transition.to : currentIndex} />
       <div
         ref={containerRef}
-        className="relative flex-1 overflow-y-auto overflow-x-hidden"
+        className="relative flex-1 overflow-y-auto overflow-x-hidden pt-[var(--scale-5)]"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         onMouseDown={handleMouseDown}

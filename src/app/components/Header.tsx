@@ -15,7 +15,7 @@ function Time() {
   return (
     <div className="h-[54px] relative shrink-0 w-[134.065px]" data-name="Time">
       <p
-        className="[word-break:break-word] absolute font-[family-name:var(--font-family-system)] font-[590] inset-[33.96%_36.71%_25.3%_36.96%] leading-[22px] text-[var(--font-size-md)] text-black text-center whitespace-nowrap"
+        className="[word-break:break-word] absolute font-[family-name:var(--font-family-system)] font-[590] inset-[33.96%_36.71%_25.3%_36.96%] leading-[22px] text-[length:var(--font-size-md)] text-black text-center whitespace-nowrap"
         style={{ fontVariationSettings: '"wdth" 100' }}
       >
         9:41
@@ -58,7 +58,7 @@ function AccountActions() {
         data-name="Button"
       >
         <div aria-hidden className="absolute border border-[rgba(255,255,255,0)] border-solid inset-0 pointer-events-none rounded-[var(--scale-2)]" />
-        <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--font-size-sm)] text-center text-white whitespace-nowrap">
+        <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[length:var(--font-size-sm)] text-center text-white whitespace-nowrap">
           <p className="leading-[16px]">Abonneer</p>
         </div>
       </div>

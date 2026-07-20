@@ -28,7 +28,7 @@ function BottomNavItems() {
             </svg>
           </div>
         </div>
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[1.15] min-w-full not-italic relative shrink-0 text-[var(--color-primary-60)] text-[var(--font-size-xs)] text-center w-[min-content]">Actueel</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[1.15] min-w-full not-italic relative shrink-0 text-[color:var(--color-primary-60)] text-[10px] text-center w-[min-content]">Actueel</p>
       </div>
       <div className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative" data-name=".bottom-nav__item">
         <div className="relative shrink-0 size-[24px]" data-name="newspaper">
@@ -38,7 +38,7 @@ function BottomNavItems() {
             </svg>
           </div>
         </div>
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[var(--font-size-xs)] text-black text-center w-[min-content]">Publicaties</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[10px] text-black text-center w-[min-content]">Publicaties</p>
       </div>
       <div className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative" data-name=".bottom-nav__item">
         <div className="relative shrink-0 size-[24px]" data-name="play-button">
@@ -48,7 +48,7 @@ function BottomNavItems() {
             </svg>
           </div>
         </div>
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[var(--font-size-xs)] text-black text-center w-[min-content]">Kijk</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[10px] text-black text-center w-[min-content]">Kijk</p>
       </div>
       <div className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative" data-name=".bottom-nav__item">
         <div className="relative shrink-0 size-[24px]" data-name="podcast">
@@ -58,7 +58,7 @@ function BottomNavItems() {
             </svg>
           </div>
         </div>
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[var(--font-size-xs)] text-black text-center w-[min-content]">Luister</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[10px] text-black text-center w-[min-content]">Luister</p>
       </div>
       <div className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative" data-name=".bottom-nav__item">
         <div className="relative shrink-0 size-[24px]" data-name="menu-search">
@@ -73,7 +73,7 @@ function BottomNavItems() {
             </svg>
           </div>
         </div>
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[var(--font-size-xs)] text-black text-center w-[min-content]">Menu</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[10px] text-black text-center w-[min-content]">Menu</p>
       </div>
     </div>
   );

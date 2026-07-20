@@ -47,9 +47,9 @@ function Frame() {
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center justify-center relative shrink-0 w-full">
       <div className="bg-[rgba(255,255,255,0)] content-stretch flex gap-[var(--scale-3)] h-[16px] items-center relative shrink-0" data-name="Editorial">
         <Animation />
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-red-60)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">live</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-red-60)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">live</p>
       </div>
-      <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.25] relative shrink-0 text-[var(--color-red-60)] text-[var(--font-size-xs)] whitespace-nowrap">3 min. geleden</p>
+      <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.25] relative shrink-0 text-[color:var(--color-red-60)] text-[length:var(--font-size-xs)] whitespace-nowrap">3 min. geleden</p>
     </div>
   );
 }
@@ -59,7 +59,7 @@ function Frame15() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame />
       <div className="content-stretch flex items-start justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.1] min-w-px not-italic relative text-[var(--font-size-3xl)] text-black text-center">Debat over flexi-jobs laait op na uitspraken van Van Peteghem</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.1] min-w-px not-italic relative text-[length:var(--font-size-3xl)] text-black text-center">Debat over flexi-jobs laait op na uitspraken van Van Peteghem</p>
       </div>
     </div>
   );
@@ -113,8 +113,8 @@ function Frame96() {
 function Frame99() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-[family-name:var(--font-family-secondary)] font-normal items-center justify-center leading-[1.25] min-w-px relative">
-      <p className="relative shrink-0 text-[var(--color-neutral-70)] text-[var(--font-size-xs)] w-full">13:16</p>
-      <p className="relative shrink-0 text-[var(--font-size-sm)] text-black w-full">Brussel en federale regering botsen over de asielopvang</p>
+      <p className="relative shrink-0 text-[color:var(--color-neutral-70)] text-[length:var(--font-size-xs)] w-full">13:16</p>
+      <p className="relative shrink-0 text-[length:var(--font-size-sm)] text-black w-full">Brussel en federale regering botsen over de asielopvang</p>
     </div>
   );
 }
@@ -147,8 +147,8 @@ function Frame100() {
 function Frame101() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-[family-name:var(--font-family-secondary)] font-normal items-center justify-center leading-[1.25] min-w-px pt-[9px] relative">
-      <p className="relative shrink-0 text-[var(--color-neutral-70)] text-[var(--font-size-xs)] w-full">12:04</p>
-      <p className="relative shrink-0 text-[var(--font-size-sm)] text-black w-full">Van den Bossche wil minder leden in het Vlaams Parlement</p>
+      <p className="relative shrink-0 text-[color:var(--color-neutral-70)] text-[length:var(--font-size-xs)] w-full">12:04</p>
+      <p className="relative shrink-0 text-[length:var(--font-size-sm)] text-black w-full">Van den Bossche wil minder leden in het Vlaams Parlement</p>
     </div>
   );
 }
@@ -180,8 +180,8 @@ function Frame103() {
 function Frame104() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-[family-name:var(--font-family-secondary)] font-normal items-center justify-center leading-[1.25] min-w-px pt-[var(--scale-5)] relative">
-      <p className="relative shrink-0 text-[var(--color-neutral-70)] text-[var(--font-size-xs)] w-full">09:23</p>
-      <p className="relative shrink-0 text-[var(--font-size-sm)] text-black w-full">Groen wijst op 111 miljoen euro fiscaal voordeel van bedrijfswagens</p>
+      <p className="relative shrink-0 text-[color:var(--color-neutral-70)] text-[length:var(--font-size-xs)] w-full">09:23</p>
+      <p className="relative shrink-0 text-[length:var(--font-size-sm)] text-black w-full">Groen wijst op 111 miljoen euro fiscaal voordeel van bedrijfswagens</p>
     </div>
   );
 }
@@ -199,7 +199,7 @@ function Frame3() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">REGERING</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">REGERING</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -219,7 +219,7 @@ function Frame16() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame3 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Axel Ronse (N-VA): “Geen reden om de flexi-jobs te herbekijken”</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Axel Ronse (N-VA): “Geen reden om de flexi-jobs te herbekijken”</p>
       </div>
     </div>
   );
@@ -245,7 +245,7 @@ function Frame5() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">MOBILITEIT</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">MOBILITEIT</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -265,7 +265,7 @@ function Frame17() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame5 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Helft van de Vlamingen betaalt met het wegenvignet meer verkeersbelasting</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Helft van de Vlamingen betaalt met het wegenvignet meer verkeersbelasting</p>
       </div>
     </div>
   );
@@ -291,7 +291,7 @@ function Frame7() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">MACHTSSPEL</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">MACHTSSPEL</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -311,7 +311,7 @@ function Frame18() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame7 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">N-VA en MR reageren verrast op de uitspraken van Van Peteghem</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">N-VA en MR reageren verrast op de uitspraken van Van Peteghem</p>
       </div>
     </div>
   );
@@ -379,7 +379,7 @@ function HeroLlive({ className }: { className?: string }) {
 
 function Frame110() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[var(--font-size-lg)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Meest recent</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -390,7 +390,7 @@ function Frame14() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -410,7 +410,7 @@ function Frame19() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame14 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">N-VA-vicepremier Jambon gooit debat over flexi-jobs open</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">N-VA-vicepremier Jambon gooit debat over flexi-jobs open</p>
       </div>
     </div>
   );
@@ -430,7 +430,7 @@ function Frame8() {
       <Frame13 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">09:40</p>
           </div>
         </div>
@@ -443,7 +443,7 @@ function Frame24() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -463,7 +463,7 @@ function Frame23() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame24 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Onderzoekscommissie Anderlechtse Haard spaart spilfiguur Lotfi Mostefa: “Dit is een doofpotcommissie”</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Onderzoekscommissie Anderlechtse Haard spaart spilfiguur Lotfi Mostefa: “Dit is een doofpotcommissie”</p>
       </div>
     </div>
   );
@@ -483,7 +483,7 @@ function Frame21() {
       <Frame22 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">08:15</p>
           </div>
         </div>
@@ -496,7 +496,7 @@ function Frame28() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">ANALYSE</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">ANALYSE</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -516,7 +516,7 @@ function Frame27() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame28 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Laatste Vlaamse “superministerraad” wordt iets minder “super”</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Laatste Vlaamse “superministerraad” wordt iets minder “super”</p>
       </div>
     </div>
   );
@@ -536,7 +536,7 @@ function Frame25() {
       <Frame26 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">07:30</p>
           </div>
         </div>
@@ -549,7 +549,7 @@ function Frame32() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">KRETEN UIT DE WETSTRAAT</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">KRETEN UIT DE WETSTRAAT</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -569,7 +569,7 @@ function Frame31() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame32 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Premier De Wever is klaar voor een reis naar Japan: “Mijn zoon laat ik daar achter”</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Premier De Wever is klaar voor een reis naar Japan: “Mijn zoon laat ik daar achter”</p>
       </div>
     </div>
   );
@@ -589,7 +589,7 @@ function Frame29() {
       <Frame30 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">06:53</p>
           </div>
         </div>
@@ -602,7 +602,7 @@ function Frame36() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">POLITIEK</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -622,7 +622,7 @@ function Frame35() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame36 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Artsen ontkwamen aan de centenindex, maar Vandenbroucke wil dat ook artsen bijdragen</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Artsen ontkwamen aan de centenindex, maar Vandenbroucke wil dat ook artsen bijdragen</p>
       </div>
     </div>
   );
@@ -642,7 +642,7 @@ function Frame33() {
       <Frame34 />
       <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] whitespace-nowrap">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] whitespace-nowrap">
             <p className="leading-[1.25]">06:10</p>
           </div>
         </div>
@@ -653,7 +653,7 @@ function Frame33() {
 
 function Frame112() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[var(--font-size-sm)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[length:var(--font-size-sm)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Meer politiek</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -662,7 +662,7 @@ function Frame112() {
 
 function Frame111() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[var(--font-size-lg)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black whitespace-nowrap">
       <p className="relative shrink-0">De Machtwacht</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -673,7 +673,7 @@ function Frame40() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--font-size-xs)] text-white uppercase whitespace-nowrap">DE MACHTWACHT</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[length:var(--font-size-xs)] text-white uppercase whitespace-nowrap">DE MACHTWACHT</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -693,7 +693,7 @@ function Frame39() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame40 />
       <div className="content-stretch flex items-start justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-2xl)] text-white">Geen verhaal, geen geld en geen populariteit: wat valt er voor Diependaele te vieren op 11 juli?</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-2xl)] text-white">Geen verhaal, geen geld en geen populariteit: wat valt er voor Diependaele te vieren op 11 juli?</p>
       </div>
     </div>
   );
@@ -719,7 +719,7 @@ function Frame44() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">DE MACHTWACHT</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">DE MACHTWACHT</p>
       </div>
     </div>
   );
@@ -730,7 +730,7 @@ function Frame43() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame44 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Waar blijft de Vlaamse regering? Klimaataanpassing is zoveel meer dan een airco installeren</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Waar blijft de Vlaamse regering? Klimaataanpassing is zoveel meer dan een airco installeren</p>
       </div>
     </div>
   );
@@ -756,7 +756,7 @@ function Frame48() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">DE MACHTWACHT</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">DE MACHTWACHT</p>
       </div>
     </div>
   );
@@ -767,7 +767,7 @@ function Frame47() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame48 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Wat een rotweek voor Matthias Diependaele en zijn regering</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Wat een rotweek voor Matthias Diependaele en zijn regering</p>
       </div>
     </div>
   );
@@ -793,7 +793,7 @@ function Frame52() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">DE MACHTWACHT</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">DE MACHTWACHT</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -813,7 +813,7 @@ function Frame51() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame52 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">{`“Een foetus in stukken hakken”: de ‘rauwe waarheid’ van CD&V zadelt De Wever met een abortuskwestie op`}</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">{`“Een foetus in stukken hakken”: de ‘rauwe waarheid’ van CD&V zadelt De Wever met een abortuskwestie op`}</p>
       </div>
     </div>
   );
@@ -837,7 +837,7 @@ function Frame49() {
 
 function Frame113() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[var(--font-size-sm)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[length:var(--font-size-sm)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Meer De Machtwacht</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -846,7 +846,7 @@ function Frame113() {
 
 function Frame114() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[var(--font-size-lg)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Managers van de macht</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -875,7 +875,7 @@ function Frame58() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center justify-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">MANAGERS VAN DE MACHT</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">MANAGERS VAN DE MACHT</p>
       </div>
     </div>
   );
@@ -886,7 +886,7 @@ function Frame57() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-center relative shrink-0 w-full">
       <Frame58 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-2xl)] text-black text-center">Vlaams topambtenaar Koen Algoed: “Weyts bleek geen fan van mijn schrijfsels, maar Diependaele bevestigde mijn recht van spreken”</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-2xl)] text-black text-center">Vlaams topambtenaar Koen Algoed: “Weyts bleek geen fan van mijn schrijfsels, maar Diependaele bevestigde mijn recht van spreken”</p>
       </div>
     </div>
   );
@@ -897,7 +897,7 @@ function Frame56() {
     <div className="content-stretch flex flex-col gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <Frame57 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Introduction">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-normal leading-[1.25] min-w-px relative text-[var(--color-neutral-70)] text-[var(--font-size-sm)] text-center">De Vlaamse topambtenaar over de vrijheid van spreken binnen de administratie.</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-normal leading-[1.25] min-w-px relative text-[color:var(--color-neutral-70)] text-[length:var(--font-size-sm)] text-center">De Vlaamse topambtenaar over de vrijheid van spreken binnen de administratie.</p>
       </div>
     </div>
   );
@@ -915,7 +915,7 @@ function Frame62() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">MANAGERS VAN DE MACHT</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">MANAGERS VAN DE MACHT</p>
       </div>
     </div>
   );
@@ -926,7 +926,7 @@ function Frame61() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame62 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Tom De Boeck, nieuwe topambtenaar Opgroeien: “Ofwel begon ik een bakkerij, ofwel zette ik een laatste stap omhoog in mijn carrière”</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Tom De Boeck, nieuwe topambtenaar Opgroeien: “Ofwel begon ik een bakkerij, ofwel zette ik een laatste stap omhoog in mijn carrière”</p>
       </div>
     </div>
   );
@@ -950,7 +950,7 @@ function Frame59() {
 
 function Frame115() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[var(--font-size-sm)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[length:var(--font-size-sm)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Meer managers van de macht</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -959,7 +959,7 @@ function Frame115() {
 
 function Frame116() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[var(--font-size-lg)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Kreten uit de Wetstraat</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -970,7 +970,7 @@ function Frame66() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center justify-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">OPINIE</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">OPINIE</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -990,7 +990,7 @@ function Frame65() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame66 />
       <div className="content-stretch flex items-start justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-2xl)] text-black text-center">Maggie De Block: “Ik was onlangs in het parlement en dacht: wat een chance dat ik hier niet meer moet komen”</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-2xl)] text-black text-center">Maggie De Block: “Ik was onlangs in het parlement en dacht: wat een chance dat ik hier niet meer moet komen”</p>
       </div>
     </div>
   );
@@ -1001,7 +1001,7 @@ function Frame64() {
     <div className="content-stretch flex flex-col gap-[var(--scale-5)] items-start relative shrink-0 w-full">
       <Frame65 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Introduction">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-normal leading-[1.25] min-w-px relative text-[var(--color-neutral-70)] text-[var(--font-size-sm)] text-center">Introduction, The quick brown fox jumps over the lazy dog and bumps into a hole</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-normal leading-[1.25] min-w-px relative text-[color:var(--color-neutral-70)] text-[length:var(--font-size-sm)] text-center">Introduction, The quick brown fox jumps over the lazy dog and bumps into a hole</p>
       </div>
     </div>
   );
@@ -1022,7 +1022,7 @@ function ProfileImage() {
 function Frame105() {
   return (
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start justify-center relative shrink-0">
-      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-sm)] whitespace-nowrap">
+      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-sm)] whitespace-nowrap">
         <p className="leading-[1.25]">Bram Willems</p>
       </div>
     </div>
@@ -1057,7 +1057,7 @@ function Frame71() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">KRETEN</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">KRETEN</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -1077,7 +1077,7 @@ function Frame70() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame71 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Conner Rousseau: “Courtois, houd die goal dicht als de Straat van Hormuz”</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Conner Rousseau: “Courtois, houd die goal dicht als de Straat van Hormuz”</p>
       </div>
     </div>
   );
@@ -1094,7 +1094,7 @@ function Frame69() {
 function Frame106() {
   return (
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start justify-center relative shrink-0">
-      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-sm)] whitespace-nowrap">
+      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-sm)] whitespace-nowrap">
         <p className="leading-[1.25]">Eva Hendrickx</p>
       </div>
     </div>
@@ -1118,7 +1118,7 @@ function Frame75() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">KRETEN</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">KRETEN</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -1138,7 +1138,7 @@ function Frame74() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame75 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Van Thailand tot IJsland en Oostende: de burgemeesters maken zich op voor vakantie</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Van Thailand tot IJsland en Oostende: de burgemeesters maken zich op voor vakantie</p>
       </div>
     </div>
   );
@@ -1155,7 +1155,7 @@ function Frame73() {
 function Frame107() {
   return (
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start justify-center relative shrink-0">
-      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-sm)] whitespace-nowrap">
+      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-sm)] whitespace-nowrap">
         <p className="leading-[1.25]">Joris Maes</p>
       </div>
     </div>
@@ -1177,7 +1177,7 @@ function Frame72() {
 
 function Frame117() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[var(--font-size-sm)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[length:var(--font-size-sm)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Meer kreten uit de Wetstraat</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -1186,7 +1186,7 @@ function Frame117() {
 
 function Frame118() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[var(--font-size-lg)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Interviews</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -1215,7 +1215,7 @@ function Frame81() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center justify-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">INTERVIEW</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">INTERVIEW</p>
       </div>
     </div>
   );
@@ -1226,7 +1226,7 @@ function Frame80() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-center relative shrink-0 w-full">
       <Frame81 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-2xl)] text-black text-center">Ook voorzitter Van den Bossche: “Kwaliteit zal er niet onder lijden bij minder parlementsleden”</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-2xl)] text-black text-center">Ook voorzitter Van den Bossche: “Kwaliteit zal er niet onder lijden bij minder parlementsleden”</p>
       </div>
     </div>
   );
@@ -1237,7 +1237,7 @@ function Frame79() {
     <div className="content-stretch flex flex-col gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <Frame80 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Introduction">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-normal leading-[1.25] min-w-px relative text-[var(--color-neutral-70)] text-[var(--font-size-sm)] text-center">De voorzitter verdedigt haar pleidooi voor een slanker parlement.</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-normal leading-[1.25] min-w-px relative text-[color:var(--color-neutral-70)] text-[length:var(--font-size-sm)] text-center">De voorzitter verdedigt haar pleidooi voor een slanker parlement.</p>
       </div>
     </div>
   );
@@ -1255,7 +1255,7 @@ function Frame85() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">INTERVIEW</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">INTERVIEW</p>
       </div>
     </div>
   );
@@ -1266,7 +1266,7 @@ function Frame84() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame85 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">N-VA en MR reageren verrast op de uitspraken van Van Peteghem over flexi-jobs</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">N-VA en MR reageren verrast op de uitspraken van Van Peteghem over flexi-jobs</p>
       </div>
     </div>
   );
@@ -1290,7 +1290,7 @@ function Frame82() {
 
 function Frame119() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[var(--font-size-sm)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[length:var(--font-size-sm)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Meer interviews</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -1299,7 +1299,7 @@ function Frame119() {
 
 function Frame120() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[var(--font-size-lg)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold gap-[var(--scale-3)] h-[32px] items-center leading-[1.4] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Opinie</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -1310,7 +1310,7 @@ function Frame89() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center justify-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">OPINIE</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">OPINIE</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -1330,7 +1330,7 @@ function Frame88() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame89 />
       <div className="content-stretch flex items-start justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-2xl)] text-black text-center">Wie punk wil zijn, moet potjes breken</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-bold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-2xl)] text-black text-center">Wie punk wil zijn, moet potjes breken</p>
       </div>
     </div>
   );
@@ -1341,7 +1341,7 @@ function Frame87() {
     <div className="content-stretch flex flex-col gap-[var(--scale-5)] items-start relative shrink-0 w-full">
       <Frame88 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Introduction">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-normal leading-[1.25] min-w-px relative text-[var(--color-neutral-70)] text-[var(--font-size-sm)] text-center">Introduction, The quick brown fox jumps over the lazy dog and bumps into a hole</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-normal leading-[1.25] min-w-px relative text-[color:var(--color-neutral-70)] text-[length:var(--font-size-sm)] text-center">Introduction, The quick brown fox jumps over the lazy dog and bumps into a hole</p>
       </div>
     </div>
   );
@@ -1362,7 +1362,7 @@ function ProfileImage1() {
 function Frame108() {
   return (
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start justify-center relative shrink-0">
-      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-sm)] whitespace-nowrap">
+      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-sm)] whitespace-nowrap">
         <p className="leading-[1.25]">Sanne Vermeulen</p>
       </div>
     </div>
@@ -1397,7 +1397,7 @@ function Frame94() {
   return (
     <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full">
       <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Label">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-xs)] uppercase whitespace-nowrap">COLUMN</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-secondary)] font-semibold leading-[1.335] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-xs)] uppercase whitespace-nowrap">COLUMN</p>
       </div>
       <div className="relative shrink-0 size-[12px]" data-name="Premium">
         <div className="absolute bg-white inset-0 rounded-[var(--scale-3)]" data-name="Background" />
@@ -1417,7 +1417,7 @@ function Frame93() {
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <Frame94 />
       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[var(--font-size-lg)] text-black">Les Bleus moeten Frankrijk redden van de blues</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-black">Les Bleus moeten Frankrijk redden van de blues</p>
       </div>
     </div>
   );
@@ -1434,7 +1434,7 @@ function Frame92() {
 function Frame109() {
   return (
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start justify-center relative shrink-0">
-      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[var(--color-secondary-80)] text-[var(--font-size-sm)] whitespace-nowrap">
+      <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-secondary-80)] text-[length:var(--font-size-sm)] whitespace-nowrap">
         <p className="leading-[1.25]">Thomas De Vries</p>
       </div>
     </div>
@@ -1456,7 +1456,7 @@ function Frame91() {
 
 function Frame121() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[var(--font-size-sm)] text-black whitespace-nowrap">
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] font-[family-name:var(--font-family-secondary)] font-semibold gap-[var(--scale-3)] items-center justify-center leading-[1.25] min-w-px relative text-[length:var(--font-size-sm)] text-black whitespace-nowrap">
       <p className="relative shrink-0">Meer opinie</p>
       <p className="relative shrink-0">›</p>
     </div>
@@ -1512,7 +1512,7 @@ export default function DsPolitiek() {
         </div>
       </div>
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
         </div>
@@ -1563,7 +1563,7 @@ export default function DsPolitiek() {
         </div>
       </div>
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
         </div>
@@ -1628,7 +1628,7 @@ export default function DsPolitiek() {
         </div>
       </div>
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
         </div>
@@ -1684,7 +1684,7 @@ export default function DsPolitiek() {
         </div>
       </div>
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
+        <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
         </div>
