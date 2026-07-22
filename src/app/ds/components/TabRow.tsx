@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { animate } from "motion/react";
 
 const TABS = [
   "Politiek",
@@ -13,45 +12,31 @@ const TABS = [
   "Onderwerpen",
 ];
 
-// Below this page index there aren't enough tabs to the left to center the
-// active one without revealing empty space before "Politiek" — so those
-// stay pinned to the start instead.
-const CENTER_FROM_INDEX = 2;
-
-export default function TabRow({ activeIndex }: { activeIndex: number }) {
-  const viewportRef = useRef<HTMLDivElement>(null);
-  const trackRef = useRef<HTMLDivElement>(null);
-  const activeTabRef = useRef<HTMLDivElement>(null);
+export default function TabRow({
+  activeIndex,
+  onSelect,
+}: {
+  activeIndex: number;
+  onSelect?: (index: number) => void;
+}) {
+  const activeTabRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const viewport = viewportRef.current;
-    const track = trackRef.current;
-    const activeTab = activeTabRef.current;
-    if (!viewport || !track || !activeTab) return;
-
-    const viewportWidth = viewport.getBoundingClientRect().width;
-    const trackWidth = track.scrollWidth;
-    const tabLeft = activeTab.offsetLeft;
-    const tabWidth = activeTab.getBoundingClientRect().width;
-
-    let targetX = 0;
-    if (activeIndex >= CENTER_FROM_INDEX) {
-      const centered = viewportWidth / 2 - tabWidth / 2 - tabLeft;
-      const minX = -(trackWidth - viewportWidth);
-      targetX = Math.min(0, Math.max(minX, centered));
-    }
-
-    animate(track, { x: targetX }, { duration: 0.35, ease: [0.4, 0, 0.2, 1] });
+    // Native scrollIntoView owns all the centering/clamping math itself —
+    // it naturally leaves "Politiek"/"Opinie" pinned at the start (there's
+    // nowhere left to scroll to center them) and centers later tabs,
+    // without any custom pixel measurement that can drift out of sync
+    // under rapid successive tab changes.
+    activeTabRef.current?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
   }, [activeIndex]);
 
   return (
     <div
-      ref={viewportRef}
-      className="bg-white content-stretch flex items-start pointer-events-auto sticky top-0 w-[375px] overflow-hidden"
+      className="bg-white content-stretch flex items-start pointer-events-auto sticky top-0 w-[375px] overflow-x-auto [&::-webkit-scrollbar]:hidden"
+      style={{ scrollbarWidth: "none" }}
       data-name="TabRow-Brand"
     >
       <div
-        ref={trackRef}
         className="bg-white content-stretch flex gap-[var(--scale-9)] items-center px-[var(--scale-7)] relative shrink-0"
         data-name="TabRow"
       >
@@ -59,10 +44,12 @@ export default function TabRow({ activeIndex }: { activeIndex: number }) {
         {TABS.map((label, i) => {
           const isActive = i === activeIndex;
           return (
-            <div
+            <button
               key={label}
               ref={isActive ? activeTabRef : undefined}
-              className="content-stretch flex items-center justify-center py-[var(--scale-8)] relative shrink-0"
+              type="button"
+              onClick={() => onSelect?.(i)}
+              className="content-stretch flex items-center justify-center py-[var(--scale-8)] relative shrink-0 cursor-pointer bg-transparent border-0 appearance-none"
               data-name="Tab"
             >
               {isActive && (
@@ -78,7 +65,7 @@ export default function TabRow({ activeIndex }: { activeIndex: number }) {
               >
                 <p className="leading-[1.1]">{label}</p>
               </div>
-            </div>
+            </button>
           );
         })}
       </div>

@@ -1,16 +1,16 @@
+import type { ReactNode } from "react";
 import { useIsMobile } from "./components/ui/use-mobile";
-import App from "./App";
 
 const DEVICE_WIDTH = 375;
 const DEVICE_HEIGHT = 812;
 const BEZEL_WIDTH = 14;
 const CORNER_RADIUS = 54;
 
-export default function PhoneFrame() {
+export default function PhoneFrame({ children }: { children: ReactNode }) {
   const isMobile = useIsMobile();
 
   if (isMobile) {
-    return <App />;
+    return <>{children}</>;
   }
 
   return (
@@ -25,10 +25,6 @@ export default function PhoneFrame() {
         }}
       >
         <div
-          className="absolute top-[14px] left-1/2 z-10 h-[24px] w-[110px] -translate-x-1/2 rounded-full bg-black"
-          aria-hidden
-        />
-        <div
           className="relative overflow-hidden bg-white"
           style={{
             width: DEVICE_WIDTH,
@@ -40,7 +36,13 @@ export default function PhoneFrame() {
             contain: "layout",
           }}
         >
-          <App />
+          {/* Dynamic Island: floats inside the screen with clear margin on
+              every side, rather than sitting flush against the bezel. */}
+          <div
+            className="absolute top-[12px] left-1/2 z-20 h-[28px] w-[96px] -translate-x-1/2 rounded-full bg-black"
+            aria-hidden
+          />
+          {children}
         </div>
       </div>
     </div>

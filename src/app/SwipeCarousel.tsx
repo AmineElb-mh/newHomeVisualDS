@@ -1,29 +1,5 @@
-import { useRef, useState, useCallback, useEffect } from "react";
+import { useRef, useState, useCallback, useEffect, type ComponentType } from "react";
 import { animate } from "motion/react";
-import Header from "./components/Header";
-import TabRow from "./components/TabRow";
-import BottomNav from "./components/BottomNav";
-import DsPolitiek from "../imports/DsPolitiek-1/index";
-import DsOpinie from "../imports/DsOpinie-1/index";
-import DsCultuur from "../imports/DsCultuur-1/index";
-import DsMijnNieuws from "../imports/DsMijnNieuws-1/index";
-import DsVandaag from "../imports/DsVandaag-1/index";
-import DsRecent from "../imports/DsRecent-1/index";
-import DsEconomie from "../imports/DsEconomie-1/index";
-import DsPuzzels from "../imports/DsPuzzels-1/index";
-import DsSecties from "../imports/DsSecties-1/index";
-
-const pages = [
-  DsPolitiek,
-  DsOpinie,
-  DsCultuur,
-  DsMijnNieuws,
-  DsVandaag,
-  DsRecent,
-  DsEconomie,
-  DsPuzzels,
-  DsSecties,
-];
 
 // Swipe tuning: high enough that scrolling/jitter never accidentally
 // triggers a page change, low enough that a normal flick registers.
@@ -47,16 +23,24 @@ type Transition = {
   width: number;
 };
 
-function Slide({ pageIndex, width }: { pageIndex: number; width: number }) {
-  const Page = pages[pageIndex];
-  return (
-    <div style={{ width, flexShrink: 0 }}>
-      <Page />
-    </div>
-  );
-}
+export type TabRowComponent = ComponentType<{
+  activeIndex: number;
+  onSelect?: (index: number) => void;
+}>;
 
-export default function App() {
+export type SwipeCarouselProps = {
+  pages: ComponentType[];
+  Header: ComponentType;
+  TabRow: TabRowComponent;
+  BottomNav: ComponentType;
+};
+
+// Brand-agnostic swipeable multi-page carousel: fixed Header/TabRow/BottomNav
+// chrome, only the content area between them slides on swipe (touch, mouse
+// drag, or trackpad wheel) or on a direct TabRow tap. Used by both the DS
+// and Telegraaf prototypes — see App.tsx in each brand folder for the
+// brand-specific pages/chrome passed in as props.
+export default function SwipeCarousel({ pages, Header, TabRow, BottomNav }: SwipeCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [transition, setTransition] = useState<Transition | null>(null);
 
@@ -72,26 +56,29 @@ export default function App() {
     currentIndexRef.current = currentIndex;
   }, [currentIndex]);
 
-  const goTo = useCallback((targetIndex: number) => {
-    const to = Math.max(0, Math.min(pages.length - 1, targetIndex));
+  const goTo = useCallback(
+    (targetIndex: number) => {
+      const to = Math.max(0, Math.min(pages.length - 1, targetIndex));
 
-    // A swipe landed while the previous transition is still animating —
-    // don't drop it, just remember where it wants to go and apply it the
-    // moment the current one settles.
-    if (isAnimatingRef.current) {
-      pendingTargetRef.current = to;
-      return;
-    }
+      // A swipe landed while the previous transition is still animating —
+      // don't drop it, just remember where it wants to go and apply it the
+      // moment the current one settles.
+      if (isAnimatingRef.current) {
+        pendingTargetRef.current = to;
+        return;
+      }
 
-    const from = currentIndexRef.current;
-    if (to === from) return;
-    const width = containerRef.current?.getBoundingClientRect().width ?? 0;
-    if (!width) return;
+      const from = currentIndexRef.current;
+      if (to === from) return;
+      const width = containerRef.current?.getBoundingClientRect().width ?? 0;
+      if (!width) return;
 
-    containerRef.current?.scrollTo({ top: 0 });
-    isAnimatingRef.current = true;
-    setTransition({ from, to, direction: to > from ? 1 : -1, width });
-  }, []);
+      containerRef.current?.scrollTo({ top: 0 });
+      isAnimatingRef.current = true;
+      setTransition({ from, to, direction: to > from ? 1 : -1, width });
+    },
+    [pages.length],
+  );
 
   // Slide the outgoing/incoming page pair past each other, then settle
   // back to rendering a single page once the animation completes.
@@ -203,7 +190,7 @@ export default function App() {
   return (
     <div className="relative size-full flex flex-col overflow-hidden select-none">
       <Header />
-      <TabRow activeIndex={transition ? transition.to : currentIndex} />
+      <TabRow activeIndex={transition ? transition.to : currentIndex} onSelect={goTo} />
       <div
         ref={containerRef}
         className="relative flex-1 overflow-y-auto overflow-x-hidden pt-[var(--scale-5)]"
@@ -214,20 +201,23 @@ export default function App() {
       >
         {transition ? (
           <div ref={rowRef} className="flex" style={{ width: transition.width * 2 }}>
-            <Slide
-              pageIndex={transition.direction > 0 ? transition.from : transition.to}
-              width={transition.width}
-            />
-            <Slide
-              pageIndex={transition.direction > 0 ? transition.to : transition.from}
-              width={transition.width}
-            />
+            <Slide pages={pages} pageIndex={transition.direction > 0 ? transition.from : transition.to} width={transition.width} />
+            <Slide pages={pages} pageIndex={transition.direction > 0 ? transition.to : transition.from} width={transition.width} />
           </div>
         ) : (
           <CurrentPage />
         )}
       </div>
       <BottomNav />
+    </div>
+  );
+}
+
+function Slide({ pages, pageIndex, width }: { pages: ComponentType[]; pageIndex: number; width: number }) {
+  const Page = pages[pageIndex];
+  return (
+    <div style={{ width, flexShrink: 0 }}>
+      <Page />
     </div>
   );
 }
