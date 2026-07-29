@@ -33,6 +33,7 @@ export type SwipeCarouselProps = {
   Header: ComponentType;
   TabRow: TabRowComponent;
   BottomNav: ComponentType;
+  initialIndex?: number;
 };
 
 // Brand-agnostic swipeable multi-page carousel: fixed Header/TabRow/BottomNav
@@ -40,17 +41,30 @@ export type SwipeCarouselProps = {
 // drag, or trackpad wheel) or on a direct TabRow tap. Used by both the DS
 // and Telegraaf prototypes — see App.tsx in each brand folder for the
 // brand-specific pages/chrome passed in as props.
-export default function SwipeCarousel({ pages, Header, TabRow, BottomNav }: SwipeCarouselProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function SwipeCarousel({ pages, Header, TabRow, BottomNav, initialIndex = 0 }: SwipeCarouselProps) {
+  const clampedInitialIndex = Math.max(0, Math.min(pages.length - 1, initialIndex));
+
+  const [currentIndex, setCurrentIndex] = useState(clampedInitialIndex);
   const [transition, setTransition] = useState<Transition | null>(null);
+  const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [scrollMetrics, setScrollMetrics] = useState({ thumbHeight: 0, thumbTop: 0, visible: false });
 
   const touchStartX = useRef<number | null>(null);
   const touchStartY = useRef<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const rowRef = useRef<HTMLDivElement>(null);
-  const currentIndexRef = useRef(0);
+  const currentIndexRef = useRef(clampedInitialIndex);
   const isAnimatingRef = useRef(false);
   const pendingTargetRef = useRef<number | null>(null);
+  const lastScrollTopRef = useRef(0);
+  const scrollIdleTimerRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (scrollIdleTimerRef.current) window.clearTimeout(scrollIdleTimerRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     currentIndexRef.current = currentIndex;
@@ -187,26 +201,93 @@ export default function SwipeCarousel({ pages, Header, TabRow, BottomNav }: Swip
 
   const CurrentPage = pages[currentIndex];
 
+  const handleContentScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    const scrollTop = e.currentTarget.scrollTop;
+    const delta = scrollTop - lastScrollTopRef.current;
+
+    // Show the scrollbar only while actively scrolling; hide it again once
+    // scrolling goes idle for a short moment.
+    if (!isScrolling) setIsScrolling(true);
+    if (scrollIdleTimerRef.current) window.clearTimeout(scrollIdleTimerRef.current);
+    scrollIdleTimerRef.current = window.setTimeout(() => setIsScrolling(false), 700);
+
+    // Custom overlay scrollbar metrics: computed from the scroll geometry so
+    // the indicator floats over the content and never affects layout width.
+    const { scrollHeight, clientHeight } = e.currentTarget;
+    if (scrollHeight > clientHeight) {
+      const trackHeight = clientHeight;
+      const thumbHeight = Math.max((clientHeight / scrollHeight) * trackHeight, 32);
+      const maxThumbTop = trackHeight - thumbHeight;
+      const thumbTop = (scrollTop / (scrollHeight - clientHeight)) * maxThumbTop;
+      setScrollMetrics({ thumbHeight, thumbTop, visible: true });
+    } else {
+      setScrollMetrics((m) => (m.visible ? { ...m, visible: false } : m));
+    }
+
+    // Near the very top we always show the full header chrome again.
+    if (scrollTop <= 8) {
+      if (isHeaderCollapsed) setIsHeaderCollapsed(false);
+      lastScrollTopRef.current = scrollTop;
+      return;
+    }
+
+    // Ignore tiny scroll jitter to avoid flicker.
+    if (Math.abs(delta) < 4) {
+      lastScrollTopRef.current = scrollTop;
+      return;
+    }
+
+    if (delta > 0 && scrollTop > 24 && !isHeaderCollapsed) {
+      setIsHeaderCollapsed(true);
+    } else if (delta < 0 && isHeaderCollapsed) {
+      setIsHeaderCollapsed(false);
+    }
+
+    lastScrollTopRef.current = scrollTop;
+  };
+
   return (
     <div className="relative size-full flex flex-col overflow-hidden select-none">
-      <Header />
-      <TabRow activeIndex={transition ? transition.to : currentIndex} onSelect={goTo} />
       <div
-        ref={containerRef}
-        className="relative flex-1 overflow-y-auto overflow-x-hidden pt-[var(--scale-5)]"
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
+        className={`overflow-hidden transition-[max-height] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-[max-height] ${isHeaderCollapsed ? "max-h-[54px]" : "max-h-[102px]"}`}
       >
-        {transition ? (
-          <div ref={rowRef} className="flex" style={{ width: transition.width * 2 }}>
-            <Slide pages={pages} pageIndex={transition.direction > 0 ? transition.from : transition.to} width={transition.width} />
-            <Slide pages={pages} pageIndex={transition.direction > 0 ? transition.to : transition.from} width={transition.width} />
-          </div>
-        ) : (
-          <CurrentPage />
-        )}
+        <Header />
+      </div>
+      <TabRow activeIndex={transition ? transition.to : currentIndex} onSelect={goTo} />
+      <style>{`
+        .swipe-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+        .swipe-scroll::-webkit-scrollbar { width: 0; height: 0; background: transparent; }
+      `}</style>
+      <div className="relative flex-1 min-h-0">
+        <div
+          ref={containerRef}
+          className="swipe-scroll absolute inset-0 overflow-y-auto overflow-x-hidden pt-[var(--scale-5)]"
+          onScroll={handleContentScroll}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+        >
+          {transition ? (
+            <div ref={rowRef} className="flex" style={{ width: transition.width * 2 }}>
+              <Slide pages={pages} pageIndex={transition.direction > 0 ? transition.from : transition.to} width={transition.width} />
+              <Slide pages={pages} pageIndex={transition.direction > 0 ? transition.to : transition.from} width={transition.width} />
+            </div>
+          ) : (
+            <CurrentPage />
+          )}
+        </div>
+        {/* Overlay scrollbar: floats over content, never affects layout width */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute right-[2px] top-0 w-[6px] rounded-full transition-opacity duration-200"
+          style={{
+            height: scrollMetrics.thumbHeight,
+            transform: `translateY(${scrollMetrics.thumbTop}px)`,
+            background: "rgba(0, 0, 0, 0.28)",
+            opacity: isScrolling && scrollMetrics.visible ? 1 : 0,
+          }}
+        />
       </div>
       <BottomNav />
     </div>

@@ -1,16 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const TABS = [
-  "Politiek",
-  "Opinie",
-  "Cultuur",
-  "Mijn Nieuws",
-  "Vandaag",
-  "Recent",
-  "Economie",
-  "Puzzels",
-  "Onderwerpen",
-];
+const TABS = ["Vrouw", "Misdaad", "Sport", "Mijn Nieuws", "Vandaag", "Financieel", "Lifestyle", "Entertainment", "Onderwerpen"];
 
 export default function TabRow({
   activeIndex,
