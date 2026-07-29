@@ -31,12 +31,33 @@ const CONTENT_ONLY_OVERRIDES = `
     padding-top: 0 !important;
   }
 
-  /* T1: hoofdtitel van de eerste teaser */
+  /* De Figma-export gebruikt klassen als font-['Roboto_Condensed:Black']
+     die Tailwind omzet naar de ONGELDIGE family-naam 'Roboto Condensed:Black'
+     (met :Black/:Bold), waardoor het lettertype terugvalt op sans-serif.
+     We mappen elk Roboto_Condensed-element naar het echt geladen font.
+     Het gewicht komt van de font-black/font-bold utility-klassen zelf. */
+  .make-content-only [class*="Roboto_Condensed"] {
+    font-family: "Roboto Condensed", sans-serif !important;
+  }
+
+  /* T1: hoofdtitel. Standaard donker (op witte achtergrond, bv. column-titels).
+     Wit alleen wanneer de titel op een afbeelding staat (zie regels hieronder). */
   .make-content-only [class*="Roboto_Condensed:Black"][class*="text-[36px]"] {
-    color: var(--tel-title-t1-color) !important;
+    color: var(--tel-title-t3-color) !important;
     font-family: var(--tel-title-t1-font-family) !important;
     font-size: var(--tel-title-t1-font-size) !important;
     font-weight: var(--tel-title-t1-font-weight) !important;
+  }
+
+  /* T1 op image (met text-shadow) wit voor contrast */
+  .make-content-only [class*="Roboto_Condensed:Black"][class*="text-[36px]"][class*="text-shadow-"] {
+    color: var(--tel-title-t1-color) !important;
+  }
+
+  /* T1 titels binnen een teaser die een image-laag bevat: wit voor leesbaarheid. */
+  .make-content-only [data-name="Teaser"]:has(> [aria-hidden] img) [class*="Roboto_Condensed:Black"][class*="text-[36px]"],
+  .make-content-only [data-name="Teaser"]:has(> [aria-hidden] > img) [class*="Roboto_Condensed:Black"][class*="text-[36px]"] {
+    color: var(--tel-title-t1-color) !important;
   }
 
   /* T3: titels van normale teasers */
@@ -84,22 +105,24 @@ const CONTENT_ONLY_OVERRIDES = `
     visibility: hidden !important;
   }
 
-  /* Donkere linear overlay ENKEL op teasers waar tekst OP de image staat.
-     De image-laag (aria-hidden met <img>) vult de hele teaser; de titel is een
-     sibling die er bovenop ligt. We geven de image-laag een eigen stacking
-     context (z-index: 0) zodat de overlay-::after (z-index: 1) BOVEN de image
-     maar ONDER de titel blijft. Zo verdonkert de overlay nooit de tekst. */
-  .make-content-only [data-name="Teaser"] > [aria-hidden]:has(> img) {
-    z-index: 0;
+  /* Donkere linear overlay op image-teasers. We herstylen de INGEBOUWDE Figma-
+     gradient-div (die al de juiste richting volgt: donker aan de kant waar de
+     titel staat). De gradient zit in de aria-hidden image-laag, ONDER de titel,
+     dus de tekst blijft altijd leesbaar. Donkere kant = rgba(0,0,0,1), uitfadend
+     naar transparant op 50%. */
+
+  /* Titel ONDER -> donker onderaan:
+     - to-t met from-donker (donker = startkleur onderaan)
+     - to-b met to-donker  (donker = eindkleur onderaan) */
+  .make-content-only [aria-hidden] [class*="bg-gradient-to-t"][class*="from-[rgba(0,0,0,0.5)]"],
+  .make-content-only [aria-hidden] [class*="bg-gradient-to-b"][class*="to-[rgba(0,0,0,0.5)]"] {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%) !important;
   }
 
-  .make-content-only [data-name="Teaser"] > [aria-hidden]:has(> img)::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Titel BOVEN -> donker bovenaan:
+     - to-t met from-transparant (donker = eindkleur bovenaan) */
+  .make-content-only [aria-hidden] [class*="bg-gradient-to-t"][class*="from-[rgba(0,0,0,0)]"] {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%) !important;
   }
 `;
 

@@ -2155,6 +2155,7 @@ function Frame149() {
           <div className="content-stretch flex gap-[8px] items-center pl-[6px] pr-[12px] py-[6px] relative size-full">
             <Frame133 />
             <Audiowave />
+            <p className="font-['Roboto:Regular',sans-serif] font-normal leading-none relative shrink-0 text-[#757778] text-[14px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>04:23</p>
           </div>
         </div>
       </div>
@@ -2267,6 +2268,7 @@ function Frame150() {
           <div className="content-stretch flex gap-[8px] items-center pl-[6px] pr-[12px] py-[6px] relative size-full">
             <Frame134 />
             <Audiowave1 />
+            <p className="font-['Roboto:Regular',sans-serif] font-normal leading-none relative shrink-0 text-[#757778] text-[14px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>04:23</p>
           </div>
         </div>
       </div>
@@ -2379,6 +2381,7 @@ function Frame151() {
           <div className="content-stretch flex gap-[8px] items-center pl-[6px] pr-[12px] py-[6px] relative size-full">
             <Frame135 />
             <Audiowave2 />
+            <p className="font-['Roboto:Regular',sans-serif] font-normal leading-none relative shrink-0 text-[#757778] text-[14px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>04:23</p>
           </div>
         </div>
       </div>
@@ -2491,6 +2494,7 @@ function Frame152() {
           <div className="content-stretch flex gap-[8px] items-center pl-[6px] pr-[12px] py-[6px] relative size-full">
             <Frame136 />
             <Audiowave3 />
+            <p className="font-['Roboto:Regular',sans-serif] font-normal leading-none relative shrink-0 text-[#757778] text-[14px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>04:23</p>
           </div>
         </div>
       </div>

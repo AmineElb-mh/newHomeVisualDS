@@ -46,7 +46,7 @@ export default function TabRow({
               )}
               <div
                 className={`[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] justify-center leading-[0] relative shrink-0 text-[length:var(--font-size-sm)] text-center whitespace-nowrap ${
-                  isActive ? "text-white font-bold" : "text-white/60 font-normal"
+                  isActive ? "text-white font-bold" : "text-white font-normal"
                 }`}
               >
                 <p className="leading-[1.1]">{label}</p>

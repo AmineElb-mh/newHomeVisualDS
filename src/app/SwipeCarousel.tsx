@@ -261,7 +261,7 @@ export default function SwipeCarousel({ pages, Header, TabRow, BottomNav, initia
       <div className="relative flex-1 min-h-0">
         <div
           ref={containerRef}
-          className="swipe-scroll absolute inset-0 overflow-y-auto overflow-x-hidden pt-[var(--scale-5)]"
+          className="swipe-scroll absolute inset-0 overflow-y-auto overflow-x-hidden pt-[16px]"
           onScroll={handleContentScroll}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
