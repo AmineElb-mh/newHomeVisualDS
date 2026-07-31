@@ -2,6 +2,8 @@ import imgRectangle33 from "./1d9f6ad557798c7a1dc0e6f0e9b88c6204c0303e.png";
 import imgRectangle34 from "./b4a5c166e625fb4c9f6806630561651aeda085a2.png";
 import imgRectangle35 from "./6a85bbcf22057805c1359628e671c43fe618f803.png";
 import svgPaths from "./svg-ot5u8y1y4m";
+import AutoPlayVideo from "../../../app/tel/content/AutoPlayVideo";
+import HorizontalScroller from "../../../app/tel/content/HorizontalScroller";
 import imgHeaderLogo from "./f09b0ddcd0eef32a8b65e86f5fdc9d5858fbca93.png";
 import imgTeaser from "./ec610ab4bac1f22b593fe8a46500566ed8aee910.png";
 import imgImage from "./37b957358c28dbd58e7eaaec69d9b5ccba322445.png";
@@ -496,9 +498,9 @@ function Frame15() {
       <div className="relative shrink-0 w-full" data-name="Title">
         <div className="flex flex-row justify-center size-full">
           <div className="content-stretch flex items-start justify-center relative size-full">
-            <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto_Condensed:Black',sans-serif] font-black leading-[0] min-w-px relative text-[20px] text-white">
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto_Condensed:Black',sans-serif] font-black leading-[0] min-w-px relative text-[16px] text-white">
               <span className="leading-[1.1]">{`Boerenprotesten in beeld: `}</span>
-              <span className="leading-[1.1] text-[#fdc300]">trekkers vormen tekst langs de IJssel</span>
+              <span className="leading-[1.1]">trekkers vormen tekst langs de IJssel</span>
             </p>
           </div>
         </div>
@@ -519,21 +521,6 @@ function Frame8() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[16px] items-center justify-end min-h-px relative w-full">
       <Frame13 />
-      <div className="relative shrink-0 w-full" data-name="Other">
-        <div className="flex flex-row items-center size-full">
-          <div className="content-center flex flex-wrap gap-[8px] items-center relative size-full">
-            <div className="relative shrink-0" data-name="Time">
-              <div className="flex flex-row items-center justify-center size-full">
-                <div className="content-stretch flex items-center justify-center relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#f6f8f9] text-[12px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    <p className="leading-none">1:12</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
@@ -544,9 +531,9 @@ function Frame20() {
       <div className="relative shrink-0 w-full" data-name="Title">
         <div className="flex flex-row justify-center size-full">
           <div className="content-stretch flex items-start justify-center relative size-full">
-            <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto_Condensed:Black',sans-serif] font-black leading-[0] min-w-px relative text-[20px] text-white">
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto_Condensed:Black',sans-serif] font-black leading-[0] min-w-px relative text-[16px] text-white">
               <span className="leading-[1.1]">{`Beelden: Japans eiland `}</span>
-              <span className="leading-[1.1] text-[#fdc300]">Kyushu getroffen door aardbeving</span>
+              <span className="leading-[1.1]">Kyushu getroffen door aardbeving</span>
             </p>
           </div>
         </div>
@@ -567,21 +554,6 @@ function Frame14() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[16px] items-center justify-end min-h-px relative w-full">
       <Frame19 />
-      <div className="relative shrink-0 w-full" data-name="Other">
-        <div className="flex flex-row items-center size-full">
-          <div className="content-center flex flex-wrap gap-[8px] items-center relative size-full">
-            <div className="relative shrink-0" data-name="Time">
-              <div className="flex flex-row items-center justify-center size-full">
-                <div className="content-stretch flex items-center justify-center relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#f6f8f9] text-[12px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    <p className="leading-none">0:48</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
@@ -592,7 +564,7 @@ function Frame23() {
       <div className="relative shrink-0 w-full" data-name="Title">
         <div className="flex flex-row justify-center size-full">
           <div className="content-stretch flex items-start justify-center relative size-full">
-            <p className="[word-break:break-word] flex-[1_0_0] font-['Noto_Serif:Bold',sans-serif] font-bold leading-none min-w-px relative text-[17px] text-white" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Noto_Serif:Bold',sans-serif] font-bold leading-none min-w-px relative text-[16px] text-white" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
               Brand in ondergrondse metro Barcelona: honderd passagiers behandeld
             </p>
           </div>
@@ -639,7 +611,7 @@ function Frame26() {
       <div className="relative shrink-0 w-full" data-name="Title">
         <div className="flex flex-row justify-center size-full">
           <div className="content-stretch flex items-start justify-center relative size-full">
-            <p className="[word-break:break-word] flex-[1_0_0] font-['Noto_Serif:Bold',sans-serif] font-bold leading-none min-w-px relative text-[17px] text-white" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Noto_Serif:Bold',sans-serif] font-bold leading-none min-w-px relative text-[16px] text-white" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
               Oranje lucht boven Brits-Columbia door hevige bosbranden
             </p>
           </div>
@@ -682,25 +654,26 @@ function Frame24() {
 
 function Frame128() {
   return (
-    <div className="content-stretch flex gap-[16px] items-start overflow-clip relative shrink-0">
-      <div className="h-[357px] relative shrink-0 w-[194px]" data-name="Video 9:16">
+    <HorizontalScroller className="flex gap-[16px] items-start overflow-x-auto relative w-full snap-x snap-mandatory scroll-px-[16px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="h-[357px] relative shrink-0 w-[194px] snap-start" data-name="Video 9:16">
         <div className="overflow-clip rounded-[inherit] size-full">
           <div className="content-stretch flex flex-col items-start relative size-full">
             <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
               <div aria-hidden className="absolute inset-0 pointer-events-none">
                 <div className="absolute inset-0 overflow-hidden">
-                  <img alt="" className="absolute h-full left-[-32.13%] max-w-none top-0 w-[327.15%]" src={imgTeaser1} />
+                  <AutoPlayVideo src="/video.mp4" poster={imgTeaser1} className="absolute inset-0 size-full object-cover" />
                 </div>
+                <div className="absolute bottom-0 left-0 right-0 h-[40%] backdrop-blur-[3px] [mask-image:linear-gradient(to_top,black_0%,black_45%,transparent_100%)]" />
                 <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.5)] inset-0 to-[60%] to-[rgba(0,0,0,0)]" />
               </div>
-              <div className="content-stretch flex flex-col gap-[16px] items-start p-[16px] relative size-full">
+              <div className="content-stretch flex flex-col gap-[16px] items-start p-[16px] pb-[12px] relative size-full">
                 <Frame8 />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="h-[357px] relative shrink-0 w-[194px]" data-name="Video 9:16">
+      <div className="h-[357px] relative shrink-0 w-[194px] snap-start" data-name="Video 9:16">
         <div className="overflow-clip rounded-[inherit] size-full">
           <div className="content-stretch flex flex-col items-start relative size-full">
             <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
@@ -708,16 +681,17 @@ function Frame128() {
                 <div className="absolute inset-0 overflow-hidden">
                   <img alt="" className="absolute h-full left-[-247.59%] max-w-none top-0 w-[327.15%]" src={imgTeaser2} />
                 </div>
+                <div className="absolute bottom-0 left-0 right-0 h-[40%] backdrop-blur-[3px] [mask-image:linear-gradient(to_top,black_0%,black_45%,transparent_100%)]" />
                 <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.5)] inset-0 to-[60%] to-[rgba(0,0,0,0)]" />
               </div>
-              <div className="content-stretch flex flex-col gap-[16px] items-start p-[16px] relative size-full">
+              <div className="content-stretch flex flex-col gap-[16px] items-start p-[16px] pb-[12px] relative size-full">
                 <Frame14 />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="h-[357px] relative shrink-0 w-[194px]" data-name="Video 9:16">
+      <div className="h-[357px] relative shrink-0 w-[194px] snap-start" data-name="Video 9:16">
         <div className="overflow-clip rounded-[inherit] size-full">
           <div className="content-stretch flex flex-col items-start relative size-full">
             <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
@@ -729,7 +703,7 @@ function Frame128() {
           </div>
         </div>
       </div>
-      <div className="h-[357px] relative shrink-0 w-[194px]" data-name="Video 9:16">
+      <div className="h-[357px] relative shrink-0 w-[194px] snap-start" data-name="Video 9:16">
         <div className="overflow-clip rounded-[inherit] size-full">
           <div className="content-stretch flex flex-col items-start relative size-full">
             <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
@@ -741,7 +715,41 @@ function Frame128() {
           </div>
         </div>
       </div>
-    </div>
+      <div className="h-[357px] relative shrink-0 w-[194px] snap-start" data-name="Video 9:16">
+        <div className="overflow-clip rounded-[inherit] size-full">
+          <div className="content-stretch flex flex-col items-start relative size-full">
+            <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTeaser6} />
+              <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.5)] inset-0 to-[60%] to-[rgba(0,0,0,0)] pointer-events-none" />
+              <div className="content-stretch flex flex-col gap-[16px] items-start p-[16px] relative size-full">
+                <div className="content-stretch flex flex-[1_0_0] flex-col gap-[16px] items-center justify-end min-h-px relative w-full">
+                  <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
+                    <div className="relative shrink-0 w-full" data-name="Title">
+                      <div className="flex flex-row justify-center size-full">
+                        <div className="content-stretch flex items-start justify-center relative size-full">
+                          <p className="[word-break:break-word] flex-[1_0_0] font-['Noto_Serif:Bold',sans-serif] font-bold leading-none min-w-px relative text-[16px] text-white" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                            Storm boven de Noordzee zorgt voor spectaculaire golven
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative shrink-0 w-full" data-name="Other">
+                    <div className="flex flex-row items-center size-full">
+                      <div className="content-center flex flex-wrap gap-[8px] items-center relative size-full">
+                        <div className="[word-break:break-word] flex flex-col font-['Noto_Serif:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#f6f8f9] text-[12px] whitespace-nowrap" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                          <p className="leading-[1.335]">0:52</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </HorizontalScroller>
   );
 }
 
