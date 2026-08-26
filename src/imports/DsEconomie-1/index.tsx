@@ -5,7 +5,7 @@ import imgImage2 from "./986ddab44e2806044ffa15f949ab110bdd1adcc3.png";
 import imgImage3 from "./cbf3e4a76d76bfc37fd1d4f388cbbe983ed71bd5.png";
 import imgImage4 from "./38eeafce1d9c05c2f5786d2c6454542f76f5eb9a.png";
 import imgImage5 from "./b0384df487e3fa4e29f222fa13b88b552e215efc.png";
-import imgRectangle33 from "./93094b8f72fcc9f2f9cb0a63fcf983e0d1d6ea4e.png";
+const imgRectangle33 = "/ing-overwaarde.png";
 import imgImage6 from "./1cbeb13aaf79be4864f59e35c80c240eccab5352.png";
 import imgImage7 from "./5810a71e2271f8cd1a0ff9cf6460383eb797ef69.png";
 import imgImage8 from "./7e323351a756c04b4eb7d47c1a8921bbafaf4e6a.png";
@@ -1345,7 +1345,7 @@ export default function DsEconomie() {
         <div className="content-stretch flex flex-col gap-[var(--scale-5)] items-start p-[var(--scale-7)] relative size-full">
           <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
           <div className="flex-[1_0_0] min-h-px relative w-full">
-            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
           </div>
         </div>
       </div>
@@ -1430,7 +1430,7 @@ export default function DsEconomie() {
         <div className="content-stretch flex flex-col gap-[var(--scale-5)] items-start p-[var(--scale-7)] relative size-full">
           <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
           <div className="flex-[1_0_0] min-h-px relative w-full">
-            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
           </div>
         </div>
       </div>

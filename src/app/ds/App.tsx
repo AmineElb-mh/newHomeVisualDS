@@ -23,7 +23,8 @@ const pages = [
   DsPuzzels,
   DsSecties,
 ];
+const START_PAGE_INDEX = 4; // Vandaag
 
 export default function App() {
-  return <SwipeCarousel pages={pages} Header={Header} TabRow={TabRow} BottomNav={BottomNav} />;
+  return <SwipeCarousel pages={pages} Header={Header} TabRow={TabRow} BottomNav={BottomNav} initialIndex={START_PAGE_INDEX} />;
 }

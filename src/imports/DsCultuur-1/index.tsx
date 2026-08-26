@@ -3,7 +3,7 @@ import imgTeaser from "./1a2fd94bddc29491e1d0748af6b864b914f8abcc.png";
 import imgTeaser1 from "./1fce5e38ebc1c0d8c26ef78c78340e3c4a087fad.png";
 import imgTeaser2 from "./648febb6704d6f915d5f60885bf1e05f36a5f13b.png";
 import imgTeaser3 from "./328569619e223e6c69a4c2298088e1dcb54ee293.png";
-import imgRectangle33 from "./93094b8f72fcc9f2f9cb0a63fcf983e0d1d6ea4e.png";
+const imgRectangle33 = "/ing-overwaarde.png";
 import imgImage from "./4b576ff3cd451d5fd284cf093e53145359298b6e.png";
 import imgImage1 from "./4b7cd8a0c90028f888c6019c8512bf12de312993.png";
 import imgImage2 from "./70dedcf1460101a1d33b976f787a732c82538bd5.png";
@@ -856,7 +856,7 @@ export default function DsCultuur() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Review">
@@ -905,7 +905,7 @@ export default function DsCultuur() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start relative shrink-0 w-[343px]" data-name="Video Grid">

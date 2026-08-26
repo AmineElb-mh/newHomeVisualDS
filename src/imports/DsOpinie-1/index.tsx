@@ -3,7 +3,7 @@ import imgProfile from "./2a5453701599daa956b2f33de57d6ddd8fc766bf.png";
 import imgImage from "./eb58e5850bf5601fc1f932173f806eca6304191d.png";
 import imgImage1 from "./7c0c1cf04140ae5fdb6d1caefeca6472735c413d.png";
 import imgImage2 from "./97eb3e1c12089029205fd0c9e7aef8130db7b181.png";
-import imgRectangle33 from "./93094b8f72fcc9f2f9cb0a63fcf983e0d1d6ea4e.png";
+const imgRectangle33 = "/ing-overwaarde.png";
 import imgImage3 from "./ba9f1b978856cabe87655d141d44242defb5d678.png";
 import imgImage4 from "./4fe5e1a6afda5e18f5715f375cc366040d8f2cd3.png";
 import imgImage5 from "./7fde8322449b15ddbe81056cde600e9c4fa211b2.png";
@@ -1378,7 +1378,7 @@ export default function DsOpinie() {
         <div className="content-stretch flex flex-col gap-[var(--scale-5)] items-start p-[var(--scale-7)] relative size-full">
           <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
           <div className="flex-[1_0_0] min-h-px relative w-full">
-            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
           </div>
         </div>
       </div>
@@ -1515,7 +1515,7 @@ export default function DsOpinie() {
         <div className="content-stretch flex flex-col gap-[var(--scale-5)] items-start p-[var(--scale-7)] relative size-full">
           <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
           <div className="flex-[1_0_0] min-h-px relative w-full">
-            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
           </div>
         </div>
       </div>
@@ -1550,7 +1550,7 @@ export default function DsOpinie() {
         <div className="content-stretch flex flex-col gap-[var(--scale-5)] items-start p-[var(--scale-7)] relative size-full">
           <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
           <div className="flex-[1_0_0] min-h-px relative w-full">
-            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
           </div>
         </div>
       </div>

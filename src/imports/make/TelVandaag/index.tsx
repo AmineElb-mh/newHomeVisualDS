@@ -586,21 +586,6 @@ function Frame21() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[16px] items-center justify-end min-h-px relative w-full">
       <Frame22 />
-      <div className="relative shrink-0 w-full" data-name="Other">
-        <div className="flex flex-row items-center size-full">
-          <div className="content-center flex flex-wrap gap-[8px] items-center relative size-full">
-            <div className="relative shrink-0" data-name="Time">
-              <div className="flex flex-row items-center justify-center size-full">
-                <div className="content-stretch flex items-center justify-center relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-['Noto_Serif:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#f6f8f9] text-[12px] whitespace-nowrap" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
-                    <p className="leading-[1.335]">0:36</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
@@ -633,21 +618,6 @@ function Frame24() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[16px] items-center justify-end min-h-px relative w-full">
       <Frame25 />
-      <div className="relative shrink-0 w-full" data-name="Other">
-        <div className="flex flex-row items-center size-full">
-          <div className="content-center flex flex-wrap gap-[8px] items-center relative size-full">
-            <div className="relative shrink-0" data-name="Time">
-              <div className="flex flex-row items-center justify-center size-full">
-                <div className="content-stretch flex items-center justify-center relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-['Noto_Serif:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#f6f8f9] text-[12px] whitespace-nowrap" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
-                    <p className="leading-[1.335]">1:05</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
@@ -695,7 +665,11 @@ function Frame128() {
         <div className="overflow-clip rounded-[inherit] size-full">
           <div className="content-stretch flex flex-col items-start relative size-full">
             <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
-              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTeaser3} />
+              <div aria-hidden className="absolute inset-0 pointer-events-none">
+                <img alt="" className="absolute max-w-none object-cover size-full" src={imgTeaser3} />
+                <div className="absolute bottom-0 left-0 right-0 h-[40%] backdrop-blur-[3px] [mask-image:linear-gradient(to_top,black_0%,black_45%,transparent_100%)]" />
+                <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.6)] inset-0 to-[60%] to-[rgba(0,0,0,0)]" />
+              </div>
               <div className="content-stretch flex flex-col gap-[16px] items-start p-[16px] relative size-full">
                 <Frame21 />
               </div>
@@ -707,7 +681,11 @@ function Frame128() {
         <div className="overflow-clip rounded-[inherit] size-full">
           <div className="content-stretch flex flex-col items-start relative size-full">
             <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
-              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTeaser4} />
+              <div aria-hidden className="absolute inset-0 pointer-events-none">
+                <img alt="" className="absolute max-w-none object-cover size-full" src={imgTeaser4} />
+                <div className="absolute bottom-0 left-0 right-0 h-[40%] backdrop-blur-[3px] [mask-image:linear-gradient(to_top,black_0%,black_45%,transparent_100%)]" />
+                <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.6)] inset-0 to-[60%] to-[rgba(0,0,0,0)]" />
+              </div>
               <div className="content-stretch flex flex-col gap-[16px] items-start p-[16px] relative size-full">
                 <Frame24 />
               </div>
@@ -720,6 +698,7 @@ function Frame128() {
           <div className="content-stretch flex flex-col items-start relative size-full">
             <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
               <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTeaser6} />
+              <div className="absolute bottom-0 left-0 right-0 h-[40%] backdrop-blur-[3px] pointer-events-none [mask-image:linear-gradient(to_top,black_0%,black_45%,transparent_100%)]" />
               <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.5)] inset-0 to-[60%] to-[rgba(0,0,0,0)] pointer-events-none" />
               <div className="content-stretch flex flex-col gap-[16px] items-start p-[16px] relative size-full">
                 <div className="content-stretch flex flex-[1_0_0] flex-col gap-[16px] items-center justify-end min-h-px relative w-full">
@@ -730,15 +709,6 @@ function Frame128() {
                           <p className="[word-break:break-word] flex-[1_0_0] font-['Noto_Serif:Bold',sans-serif] font-bold leading-none min-w-px relative text-[16px] text-white" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
                             Storm boven de Noordzee zorgt voor spectaculaire golven
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="relative shrink-0 w-full" data-name="Other">
-                    <div className="flex flex-row items-center size-full">
-                      <div className="content-center flex flex-wrap gap-[8px] items-center relative size-full">
-                        <div className="[word-break:break-word] flex flex-col font-['Noto_Serif:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#f6f8f9] text-[12px] whitespace-nowrap" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
-                          <p className="leading-[1.335]">0:52</p>
                         </div>
                       </div>
                     </div>

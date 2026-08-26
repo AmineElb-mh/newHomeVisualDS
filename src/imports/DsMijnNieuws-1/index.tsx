@@ -6,7 +6,7 @@ import imgImage3 from "./ef84eb4c7e15a57daca15dc323ca9e7c2211d139.png";
 import imgImage4 from "./b9a89ba48598ce251233bdfcb31a5c3684dfa3ad.png";
 import imgImage5 from "./6e2e3eb5615f2575463452da9e9d594e98f95f5b.png";
 import imgImage6 from "./44c1cd0d8c9171d1daefc2708550ca24690bb22c.png";
-import imgRectangle33 from "./93094b8f72fcc9f2f9cb0a63fcf983e0d1d6ea4e.png";
+const imgRectangle33 = "/ing-overwaarde.png";
 import imgImage7 from "./6c5a393847ec60108544fb9bd57d343f1dabcde3.png";
 import imgImage8 from "./7f43b5db79912e97bf1c31ba2fa3567666392b64.png";
 import imgImage9 from "./876d19745878f75d79876a6e7753104a76fc3474.png";
@@ -970,7 +970,7 @@ export default function DsMijnNieuws() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Recipes">

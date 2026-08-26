@@ -6,7 +6,7 @@ import imgImage3 from "./821f0be6028c7935d8453b75ae3c327b225516dd.png";
 import imgImage4 from "./18a594b3f37e726bca0a0a43182fc90a025e5337.png";
 import imgImage5 from "./a91dec88fd59e1440e9be81ce33b8535c6281618.png";
 import imgImage6 from "./548b8e3cc46901b9739fcecceeec0cf68d0c724a.png";
-import imgRectangle33 from "./93094b8f72fcc9f2f9cb0a63fcf983e0d1d6ea4e.png";
+const imgRectangle33 = "/ing-overwaarde.png";
 import imgTeaser from "./7fdb9a2b698c8a7022225f535845a6640539d703.png";
 import imgImage7 from "./4a6582dfa22e8bbdf12f1d81084fd8a9d46c8f20.png";
 import imgImage8 from "./9540fb7420b904bcb2e7673aea007dead5d0277c.png";
@@ -1514,7 +1514,7 @@ export default function DsPolitiek() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Stories">
@@ -1565,7 +1565,7 @@ export default function DsPolitiek() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Interview">
@@ -1630,7 +1630,7 @@ export default function DsPolitiek() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Interview">
@@ -1686,7 +1686,7 @@ export default function DsPolitiek() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
     </div>

@@ -1,4 +1,6 @@
 import svgPaths from "./svg-bv5iuxqlnx";
+import AutoPlayVideo from "../../app/tel/content/AutoPlayVideo";
+import HorizontalScroller from "../../app/tel/content/HorizontalScroller";
 import imgImage from "./fff9dcf66daa5bc12e71a5aa7f9b35dd1bad5762.png";
 import imgImage1 from "./16dd95d12c1260074a96dc345742dc2b1dd020a7.png";
 import imgImage2 from "./b0fb2c46b23d5a05c177be7ceb82ebf64728f8a8.png";
@@ -7,7 +9,7 @@ import imgTeaser from "./cdaf5023d154d98a0a06188693257d26abd96099.png";
 import imgTeaser1 from "./66b96a1de06985bb4216b9df005c83440781d9c5.png";
 import imgTeaser2 from "./48201d8feb2136142dbb155e2cf9a578856b27e7.png";
 import imgTeaser3 from "./47036d48123cc7b73734e0259976f65bdbc656c0.png";
-import imgRectangle33 from "./93094b8f72fcc9f2f9cb0a63fcf983e0d1d6ea4e.png";
+const imgRectangle33 = "/ing-overwaarde.png";
 import imgLogo from "./7a56934003c2f45db4ac92453399737884d852bf.png";
 import imgLogo1 from "./83d07c0a27891a7eacdfd4dd8e7065e32b59c8ef.png";
 import imgImage4 from "./62076345de0bf9f4a16d224db248f2dfea013bb9.png";
@@ -577,7 +579,7 @@ function Frame36() {
   return (
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <div className="content-stretch flex items-start justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-white">Justin Bieber speelt WK-finale, Margaret Qualley wil scheiden</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[16px] text-white">Justin Bieber speelt WK-finale, Margaret Qualley wil scheiden</p>
       </div>
     </div>
   );
@@ -595,13 +597,6 @@ function Frame34() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[var(--scale-7)] items-center justify-end min-h-px relative w-full">
       <Frame35 />
-      <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
-        <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-neutral-20)] text-[length:var(--font-size-xs)] whitespace-nowrap">
-            <p className="leading-[1.25]">05:23</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
@@ -610,7 +605,7 @@ function Frame39() {
   return (
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <div className="content-stretch flex items-start justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-white">{`Bonnie Tyler (1951-2026), de vrouw met de schuurpapieren stem `}</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[16px] text-white">{`Bonnie Tyler (1951-2026), de vrouw met de schuurpapieren stem `}</p>
       </div>
     </div>
   );
@@ -628,13 +623,6 @@ function Frame37() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[var(--scale-7)] items-center justify-end min-h-px relative w-full">
       <Frame38 />
-      <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
-        <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-neutral-20)] text-[length:var(--font-size-xs)] whitespace-nowrap">
-            <p className="leading-[1.25]">05:23</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
@@ -643,7 +631,7 @@ function Frame42() {
   return (
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <div className="content-stretch flex items-start justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-white">Wat was dat met die hufterige festivalgangers op Rock Werchter?</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[16px] text-white">Wat was dat met die hufterige festivalgangers op Rock Werchter?</p>
       </div>
     </div>
   );
@@ -661,13 +649,6 @@ function Frame40() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[var(--scale-7)] items-center justify-end min-h-px relative w-full">
       <Frame41 />
-      <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
-        <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-neutral-20)] text-[length:var(--font-size-xs)] whitespace-nowrap">
-            <p className="leading-[1.25]">05:23</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
@@ -676,7 +657,7 @@ function Frame45() {
   return (
     <div className="content-stretch flex flex-col gap-[var(--scale-3)] items-start relative shrink-0 w-full">
       <div className="content-stretch flex items-start justify-center relative shrink-0 w-full" data-name="Title">
-        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[length:var(--font-size-lg)] text-white">Op het internet zitten nu meer AI-agents en bots dan mensen, wat betekent dat?</p>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-family-primary)] font-semibold leading-[1.15] min-w-px not-italic relative text-[16px] text-white">Op het internet zitten nu meer AI-agents en bots dan mensen, wat betekent dat?</p>
       </div>
     </div>
   );
@@ -694,59 +675,64 @@ function Frame43() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[var(--scale-7)] items-center justify-end min-h-px relative w-full">
       <Frame44 />
-      <div className="content-center flex flex-wrap gap-[var(--scale-5)] items-center relative shrink-0 w-full" data-name="Other">
-        <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Time">
-          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family-secondary)] font-normal justify-center leading-[0] relative shrink-0 text-[color:var(--color-neutral-20)] text-[length:var(--font-size-xs)] whitespace-nowrap">
-            <p className="leading-[1.25]">05:23</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
 
 function Frame185() {
   return (
-    <div className="content-stretch flex gap-[var(--scale-7)] items-start overflow-clip relative shrink-0">
-      <div className="content-stretch flex flex-col h-[357px] items-start overflow-clip relative shrink-0 w-[194px]" data-name="Video 9:16">
-        <div className="flex-[1_0_0] min-h-px relative rounded-[var(--scale-7)] w-full" data-name="Teaser">
-          <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[var(--scale-7)]">
-            <img alt="" className="absolute max-w-none object-cover rounded-[var(--scale-7)] size-full" src={imgTeaser} />
-            <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.5)] inset-0 rounded-[var(--scale-7)] to-[60%] to-[rgba(0,0,0,0)]" />
+    <HorizontalScroller className="flex gap-[var(--scale-7)] items-start overflow-x-auto relative w-full snap-x snap-mandatory scroll-px-[var(--scale-7)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="content-stretch flex flex-col h-[357px] items-start overflow-clip relative shrink-0 w-[194px] snap-start" data-name="Video 9:16">
+        <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
+          <div aria-hidden className="absolute inset-0 pointer-events-none">
+            <div className="absolute inset-0 overflow-hidden">
+              <AutoPlayVideo src="/video.mp4" poster={imgTeaser} className="absolute inset-0 size-full object-cover" />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 h-[40%] backdrop-blur-[3px] [mask-image:linear-gradient(to_top,black_0%,black_45%,transparent_100%)]" />
+            <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.5)] inset-0 to-[60%] to-[rgba(0,0,0,0)]" />
           </div>
           <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start p-[var(--scale-7)] relative size-full">
             <Frame34 />
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[357px] items-start overflow-clip relative shrink-0 w-[194px]" data-name="Video 9:16">
-        <div className="flex-[1_0_0] min-h-px relative rounded-[var(--scale-7)] w-full" data-name="Teaser">
-          <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[var(--scale-7)]">
-            <img alt="" className="absolute max-w-none object-cover rounded-[var(--scale-7)] size-full" src={imgTeaser1} />
-            <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.6)] inset-0 rounded-[var(--scale-7)] to-[60%] to-[rgba(0,0,0,0)]" />
+      <div className="content-stretch flex flex-col h-[357px] items-start overflow-clip relative shrink-0 w-[194px] snap-start" data-name="Video 9:16">
+        <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
+          <div aria-hidden className="absolute inset-0 pointer-events-none">
+            <img alt="" className="absolute max-w-none object-cover size-full" src={imgTeaser1} />
+            <div className="absolute bottom-0 left-0 right-0 h-[40%] backdrop-blur-[3px] [mask-image:linear-gradient(to_top,black_0%,black_45%,transparent_100%)]" />
+            <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.6)] inset-0 to-[60%] to-[rgba(0,0,0,0)]" />
           </div>
           <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start p-[var(--scale-7)] relative size-full">
             <Frame37 />
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[357px] items-start overflow-clip relative shrink-0 w-[194px]" data-name="Video 9:16">
-        <div className="flex-[1_0_0] min-h-px relative rounded-[var(--scale-7)] w-full" data-name="Teaser">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[var(--scale-7)] size-full" src={imgTeaser2} />
+      <div className="content-stretch flex flex-col h-[357px] items-start overflow-clip relative shrink-0 w-[194px] snap-start" data-name="Video 9:16">
+        <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
+          <div aria-hidden className="absolute inset-0 pointer-events-none">
+            <img alt="" className="absolute max-w-none object-cover size-full" src={imgTeaser2} />
+            <div className="absolute bottom-0 left-0 right-0 h-[40%] backdrop-blur-[3px] [mask-image:linear-gradient(to_top,black_0%,black_45%,transparent_100%)]" />
+            <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.6)] inset-0 to-[60%] to-[rgba(0,0,0,0)]" />
+          </div>
           <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start p-[var(--scale-7)] relative size-full">
             <Frame40 />
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[357px] items-start overflow-clip relative shrink-0 w-[194px]" data-name="Video 9:16">
-        <div className="flex-[1_0_0] min-h-px relative rounded-[var(--scale-7)] w-full" data-name="Teaser">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[var(--scale-7)] size-full" src={imgTeaser3} />
+      <div className="content-stretch flex flex-col h-[357px] items-start overflow-clip relative shrink-0 w-[194px] snap-start" data-name="Video 9:16">
+        <div className="flex-[1_0_0] min-h-px relative w-full" data-name="Teaser">
+          <div aria-hidden className="absolute inset-0 pointer-events-none">
+            <img alt="" className="absolute max-w-none object-cover size-full" src={imgTeaser3} />
+            <div className="absolute bottom-0 left-0 right-0 h-[40%] backdrop-blur-[3px] [mask-image:linear-gradient(to_top,black_0%,black_45%,transparent_100%)]" />
+            <div className="absolute bg-gradient-to-t from-[rgba(0,0,0,0.6)] inset-0 to-[60%] to-[rgba(0,0,0,0)]" />
+          </div>
           <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start p-[var(--scale-7)] relative size-full">
             <Frame43 />
           </div>
         </div>
       </div>
-    </div>
+    </HorizontalScroller>
   );
 }
 
@@ -939,7 +925,7 @@ function Stack7() {
 
 function Stack() {
   return (
-    <div className="content-stretch flex gap-[var(--scale-7)] items-start overflow-x-auto overflow-y-clip relative shrink-0 w-full" data-name="Stack">
+    <HorizontalScroller className="content-stretch flex gap-[var(--scale-7)] items-start overflow-x-auto overflow-y-clip relative shrink-0 w-full [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <div className="bg-[var(--color-neutral-10)] content-stretch flex h-[57px] items-center justify-center px-[var(--scale-5)] py-[var(--scale-2)] relative rounded-[var(--scale-3)] shrink-0 w-[200px]" data-name="Game">
         <HomeTeam />
         <Center />
@@ -962,7 +948,7 @@ function Stack() {
         </div>
       </div>
       <Stack7 />
-    </div>
+    </HorizontalScroller>
   );
 }
 
@@ -3233,7 +3219,7 @@ export default function DsVandaag() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Sport">
@@ -3275,7 +3261,7 @@ export default function DsVandaag() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Culture">
@@ -3334,7 +3320,7 @@ export default function DsVandaag() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Stories">
@@ -3445,7 +3431,7 @@ export default function DsVandaag() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Report">
@@ -3510,7 +3496,7 @@ export default function DsVandaag() {
       <div className="bg-[var(--color-neutral-20)] content-stretch flex flex-col gap-[var(--scale-5)] h-[307px] items-start p-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Ad">
         <p className="[word-break:break-word] font-[family-name:var(--font-family-primary)] font-light leading-[1.25] not-italic relative shrink-0 text-[length:var(--font-size-xs)] text-black text-center w-full">Advertentie</p>
         <div className="flex-[1_0_0] min-h-px relative w-full">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle33} />
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[var(--scale-7)] items-start px-[var(--scale-7)] relative shrink-0 w-[375px]" data-name="Recipes">
