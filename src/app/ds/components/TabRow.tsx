@@ -8,7 +8,7 @@ const TABS = [
   "Vandaag",
   "Recent",
   "Economie",
-  "Puzzels",
+  "Sport",
   "Onderwerpen",
 ];
 

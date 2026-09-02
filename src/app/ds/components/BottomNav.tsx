@@ -14,22 +14,42 @@ const svgPaths = {
     "M17.9782 13.0775L14.109 9.23701C13.7281 9.51401 13.3131 9.72493 12.8637 9.86977C12.4144 10.0146 11.9576 10.087 11.4935 10.087C10.2405 10.087 9.17247 9.64927 8.28947 8.77377C7.4063 7.8981 6.96472 6.83426 6.96472 5.58226C6.96472 4.33043 7.40647 3.26668 8.28997 2.39101C9.17364 1.51535 10.2422 1.07751 11.4957 1.07751C12.7494 1.07751 13.8172 1.51535 14.6992 2.39101C15.5812 3.26668 16.0222 4.32885 16.0222 5.57751C16.0222 6.04168 15.9498 6.49843 15.805 6.94776C15.6601 7.3971 15.4461 7.80893 15.1627 8.18327L19.032 12.0238L17.9782 13.0775ZM11.4935 8.58702C12.3348 8.58702 13.05 8.29535 13.639 7.71201C14.228 7.12868 14.5225 6.41876 14.5225 5.58226C14.5225 4.74576 14.228 4.03585 13.639 3.45251C13.05 2.86918 12.3348 2.57751 11.4935 2.57751C10.6521 2.57751 9.93697 2.86918 9.34797 3.45251C8.75914 4.03585 8.46472 4.74576 8.46472 5.58226C8.46472 6.41876 8.75914 7.12868 9.34797 7.71201C9.93697 8.29535 10.6521 8.58702 11.4935 8.58702Z",
 };
 
-function BottomNavItems() {
+function BottomNavItems({ activeTab, onNavigate }: BottomNavProps) {
+  const actueelActive = activeTab === "actueel";
+  const kijkActive = activeTab === "kijk";
+
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="bottom-nav__items">
-      <div className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative" data-name=".bottom-nav__item">
+      <button
+        type="button"
+        onClick={() => onNavigate?.("actueel")}
+        className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative cursor-pointer bg-transparent border-0 appearance-none"
+        data-name=".bottom-nav__item"
+      >
         <div className="relative shrink-0 size-[24px]" data-name="logo-square-inverse">
           <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
             <path d={svgPaths.p361a800} fill="var(--fill-0, white)" id="Background" />
           </svg>
           <div className="absolute inset-[15.28%_11.5%]" data-name="Vector">
             <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.4814 16.6658">
-              <path clipRule="evenodd" d={svgPaths.p1fc2d880} fill="var(--fill-0, var(--color-primary-60))" fillRule="evenodd" id="Vector" />
+              <path
+                clipRule="evenodd"
+                d={svgPaths.p1fc2d880}
+                fill={`var(--fill-0, ${actueelActive ? "var(--color-primary-60)" : "black"})`}
+                fillRule="evenodd"
+                id="Vector"
+              />
             </svg>
           </div>
         </div>
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[1.15] min-w-full not-italic relative shrink-0 text-[color:var(--color-primary-60)] text-[10px] text-center w-[min-content]">Actueel</p>
-      </div>
+        <p
+          className={`[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[1.15] min-w-full not-italic relative shrink-0 text-[10px] text-center w-[min-content] ${
+            actueelActive ? "text-[color:var(--color-primary-60)]" : "text-black"
+          }`}
+        >
+          Actueel
+        </p>
+      </button>
       <div className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative" data-name=".bottom-nav__item">
         <div className="relative shrink-0 size-[24px]" data-name="newspaper">
           <div className="absolute inset-[18.75%_9.38%_18.75%_3.13%]" data-name="Vector">
@@ -40,16 +60,27 @@ function BottomNavItems() {
         </div>
         <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[10px] text-black text-center w-[min-content]">Publicaties</p>
       </div>
-      <div className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative" data-name=".bottom-nav__item">
+      <button
+        type="button"
+        onClick={() => onNavigate?.("kijk")}
+        className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative cursor-pointer bg-transparent border-0 appearance-none"
+        data-name=".bottom-nav__item"
+      >
         <div className="relative shrink-0 size-[24px]" data-name="play-button">
           <div className="absolute inset-[10.42%]" data-name="Vector">
             <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 19 19">
-              <path d={svgPaths.p35114a00} fill="var(--fill-0, black)" id="Vector" />
+              <path d={svgPaths.p35114a00} fill={`var(--fill-0, ${kijkActive ? "var(--color-primary-60)" : "black"})`} id="Vector" />
             </svg>
           </div>
         </div>
-        <p className="[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[10px] text-black text-center w-[min-content]">Kijk</p>
-      </div>
+        <p
+          className={`[word-break:break-word] font-[family-name:var(--font-family-system)] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[10px] text-center w-[min-content] ${
+            kijkActive ? "text-[color:var(--color-primary-60)]" : "text-black"
+          }`}
+        >
+          Kijk
+        </p>
+      </button>
       <div className="content-stretch flex flex-[1_0_0] flex-col h-[40px] items-center justify-between min-w-px relative" data-name=".bottom-nav__item">
         <div className="relative shrink-0 size-[24px]" data-name="podcast">
           <div className="absolute inset-[14.58%]" data-name="Vector">
@@ -79,10 +110,15 @@ function BottomNavItems() {
   );
 }
 
-export default function BottomNav() {
+export type BottomNavProps = {
+  activeTab?: "actueel" | "kijk";
+  onNavigate?: (tab: "actueel" | "kijk") => void;
+};
+
+export default function BottomNav({ activeTab = "actueel", onNavigate }: BottomNavProps) {
   return (
     <div className="bg-white content-stretch flex flex-col gap-[var(--scale-2)] items-start pt-[7px] w-full shrink-0" data-name="Navigation2.0 - bottom-nav">
-      <BottomNavItems />
+      <BottomNavItems activeTab={activeTab} onNavigate={onNavigate} />
       <div className="bg-white h-[34px] relative shrink-0 w-full" data-name="HomeIndicator">
         <div className="-translate-x-1/2 absolute bg-black bottom-[8px] h-[5px] left-[calc(50%+0.5px)] rounded-[var(--scale-infinite)] w-[134px]" data-name="Home Indicator" />
       </div>
